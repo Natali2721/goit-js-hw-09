@@ -64,6 +64,7 @@ function startTimer() {
       clearInterval(timerId);
       refs.startElem.disabled = false;
       Notiflix.Notify.info('відлік закінчився');
+      timerId = null;
     }
   }, 1000);
 }
