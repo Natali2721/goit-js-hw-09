@@ -25,7 +25,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (timerId) {
-      Notiflix.Notify.failure('будь ласка, оновіть сторінку :)');
+      Notiflix.Notify.warning('будь ласка, оновіть сторінку :)');
       return;
     }
     if (Date.now() > selectedDates[0]) {
